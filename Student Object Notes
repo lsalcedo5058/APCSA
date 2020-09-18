@@ -1,0 +1,58 @@
+package Mod2;
+
+/**
+ *
+ * @author lssal
+ */
+public class Student {
+
+    private String name;
+    private double grade;
+    private boolean behavior;
+            
+ public Student()
+ {
+     
+ } 
+ 
+public Student(String n, double g, boolean b)
+{
+     name = n;
+     grade = g;
+     behavior = b;
+     
+   
+}      
+
+public void changeGrade(double g)
+{
+    grade = g;
+}        
+
+public String getName()
+{
+    return name;
+    
+}        
+
+public  double getGrade()
+{
+    return grade;
+            
+}
+ public boolean getBehavior()
+ {
+     return behavior;
+ }        
+
+ public void printOutStudent()
+ {
+     System.out.println("Name:\t " + getName() + "Gpa:\t" + getGrade() + "Problem:\t" + getBehavior());
+ }
+ 
+public static void main(String[] args)
+{
+  Student student1 = new Student ("Aaron" , 1.9 , true);
+  student1.printOutStudent();  
+}    
+}
