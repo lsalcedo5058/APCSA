@@ -1,0 +1,58 @@
+package object;
+
+/**
+ *
+ * @author lssal
+ */
+public class Object
+{
+    private String flavorOfIceCream;
+    private int scoops;
+    private String waffleOrCup;
+
+    public Object()
+    {
+
+    }
+
+    public Object (String t, int s, String i)
+    {
+        flavorOfIceCream = t;
+        scoops = s;
+        waffleOrCup = i;
+    }
+
+    public void changeType(String t)
+    {
+        flavorOfIceCream = t;
+    }
+
+  public String getFlavor()
+    {
+    return flavorOfIceCream;
+    }
+
+    public int getScoops()
+    {
+    return scoops;
+    }
+
+    public String getWaffleOrCup()
+    {
+    return waffleOrCup;
+    }
+
+
+    public void printOutIceCream()
+    {
+    System.out.println("Flavor of Ice Cream:\t" + getFlavor() + "\n " + "Scoops:\t" + getScoops() + "\n " + "Waffle or Cup:\t" + getWaffleOrCup() + "\n ");
+    }
+
+
+
+public static void main(String[] args)
+{
+    Object iceCream1 = new Object ("Chocolate", 2 , "Waffle" );
+    iceCream1.printOutIceCream();
+}
+}
